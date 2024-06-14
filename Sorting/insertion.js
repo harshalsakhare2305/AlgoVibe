@@ -104,15 +104,18 @@ Auxiliary Space: O(1)
 async function InsertionSort() {
     const element = document.querySelectorAll('.bar');
     element[0].style.background = 'cyan';
+    
     for (let i = 1; i < element.length; i++) {
         let j = i - 1;
-        let p = element[i].style.height;
-        element[i].style.background = 'rgb(250, 5, 54)';
+        let p = element[i].style.height; // height of the first element of unsorted part
+        element[i].style.background = 'rgb(206, 232, 9)';
         await waitforme(delay);
 
         while (j >= 0 && (parseInt(element[j].style.height) > parseInt(p))) {
             element[j].style.background = 'rgb(9, 102, 2)';
+            
             element[j + 1].style.height = element[j].style.height;
+            element[j+1].innerHTML=parseInt(element[j].style.height);
             j--;
             beep.play();
             await waitforme(delay);
@@ -123,6 +126,7 @@ async function InsertionSort() {
             }
         }
         element[j + 1].style.height = p;
+        element[j+1].innerHTML=parseInt(p);
         element[i].style.background = 'rgb(3, 252, 11)';
     }
     selectText.innerHTML=`Sorting Complete!`

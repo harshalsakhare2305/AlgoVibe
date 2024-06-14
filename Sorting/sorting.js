@@ -171,8 +171,14 @@ function swapping(eliment_1, eliment_2) {
     let temp = eliment_1.style.height;
     eliment_1.style.height = eliment_2.style.height;
     eliment_2.style.height = temp;
+  
+    eliment_1.innerText=parseInt(eliment_1.style.height);
+    eliment_2.innerText=parseInt(eliment_2.style.height);
+    
 
 }
+
+
 
 const menu = document.querySelector('.menu')
 const options = document.querySelectorAll('.menu li')

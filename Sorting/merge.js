@@ -199,8 +199,7 @@ async function Merge(element, low, mid, high) {
       beep.play();
       element[low + i].style.background = 'red';
       left[i] = element[low + i].style.height;
-
-
+      // left[i].innerHTML=parseInt(element[low+i].style.height);
    }
 
 
@@ -209,6 +208,7 @@ async function Merge(element, low, mid, high) {
       beep.play();
       element[mid + 1 + i].style.background = 'yellow';
       right[i] = element[mid + 1 + i].style.height;
+      // right[i].innerHTML=parseInt(element[mid + 1 + i].style.height);
    }
    await waitforme(delay);
 
@@ -231,6 +231,7 @@ async function Merge(element, low, mid, high) {
          }
 
          element[k].style.height = left[i];
+         element[k].innerHTML=parseInt(left[i]);
 
          i++;
          k++;
@@ -246,6 +247,7 @@ async function Merge(element, low, mid, high) {
          }
 
          element[k].style.height = right[j];
+         element[k].innerHTML=parseInt(right[j]);
          j++;
          k++;
       }
@@ -262,6 +264,8 @@ async function Merge(element, low, mid, high) {
 
       }
       element[k].style.height = left[i];
+      element[k].innerHTML=parseInt(left[i]);
+
       i++;
       k++;
    }
@@ -278,6 +282,8 @@ async function Merge(element, low, mid, high) {
       }
 
       element[k].style.height = right[j];
+      element[k].innerHTML=parseInt(right[j]);
+
       j++;
       k++;
    }

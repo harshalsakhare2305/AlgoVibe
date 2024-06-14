@@ -34,6 +34,8 @@ async function BubbleSort() {
 
                 await waitforme(delay);
                 swapping(element[j], element[j + 1]);
+               
+              
                 beep.play()
 
             }
