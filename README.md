@@ -1,22 +1,100 @@
-# ALGORITHM-VISUALIZER
-Project deployed on :https://algovibe.vercel.app/
-AlgoVibe is an Data Stucture and Algorithm Visualiser app ,Currently it providing services of visualisation of Sorting Techniques like 
-1.Bubble Sort
-2.Selection Sort
-3.Insertion Sort
-4.Merge Sort
-5.Quick Sort
+# 🎨 AlgoVibe — Algorithm Visualizer
 
-And Serching Techniques like 
-1.Linear Search
-2.Binary Search
- ![Screenshot 2024-09-25 230943](https://github.com/user-attachments/assets/e0010872-7aac-4abc-a23d-ea08c9f0276d)
-![Screenshot 2024-09-25 230828](https://github.com/user-attachments/assets/cea5b02b-9112-41d3-999a-73cb8cad81e1)
-![Screenshot 2024-09-25 230800](https://github.com/user-attachments/assets/de5de0c5-3de1-4973-b5b9-f12ab64b1924)
-![Screenshot 2024-09-25 230748](https://github.com/user-attachments/assets/2f32c38a-ad3f-40eb-afb7-68c739b00d4c)
-![Screenshot 2024-09-25 230415](https://github.com/user-attachments/assets/d8313712-1043-4c08-91bc-c37ab57cdec3)
-![Screenshot 2024-09-25 230344](https://github.com/user-attachments/assets/eb01e3cb-f9f8-40e8-8678-0487289c42ab)
-![Screenshot 2024-09-25 230333](https://github.com/user-attachments/assets/0ff2befe-0286-4b32-a26f-d3e3f8b6f69b)
+> **Live Demo:** 🚀 [algovibe.vercel.app](https://algovibe.vercel.app)
 
+**AlgoVibe** is an interactive **Data Structure & Algorithm Visualizer** web app built with vanilla HTML, CSS, and JavaScript. It brings algorithms to life through smooth, step-by-step animations — making it easier to understand how classic sorting and searching techniques actually work under the hood.
 
+---
 
+## ✨ Features
+
+### 🔃 Sorting Algorithms
+Visualize each sorting algorithm step-by-step with animated bar comparisons and swaps:
+
+| Algorithm | Description | Source |
+|---|---|---|
+| Bubble Sort | Repeatedly swaps adjacent elements if they are in the wrong order | [🔗 View](https://github.com/harshalsakhare2305/AlgoVibe/tree/master/Sorting) |
+| Selection Sort | Finds the minimum element and places it at the beginning | [🔗 View](https://github.com/harshalsakhare2305/AlgoVibe/tree/master/Sorting) |
+| Insertion Sort | Builds the sorted array one element at a time | [🔗 View](https://github.com/harshalsakhare2305/AlgoVibe/tree/master/Sorting) |
+| Merge Sort | Divides array in half, sorts recursively, then merges | [🔗 View](https://github.com/harshalsakhare2305/AlgoVibe/tree/master/Sorting) |
+| Quick Sort | Picks a pivot and partitions elements around it | [🔗 View](https://github.com/harshalsakhare2305/AlgoVibe/tree/master/Sorting) |
+
+### 🔍 Searching Algorithms
+Watch the search traverse through elements in real time:
+
+| Algorithm | Description | Source |
+|---|---|---|
+| Linear Search | Sequentially checks every element until the target is found | [🔗 View](https://github.com/harshalsakhare2305/AlgoVibe/tree/master/Searching) |
+| Binary Search | Efficiently finds target by halving the search space each step | [🔗 View](https://github.com/harshalsakhare2305/AlgoVibe/tree/master/Searching) |
+
+---
+
+## 🗂️ Project Structure
+
+```
+AlgoVibe/
+├── index.html              # Landing / home page
+├── style.css               # Global styles
+├── bg.mp4                  # Background video asset
+├── upper-gradient.svg      # UI gradient asset
+├── mask (1).jpg            # UI mask image asset
+├── Sorting/                # Sorting algorithm pages & scripts
+├── Searching/              # Searching algorithm pages & scripts
+└── About us/               # About page
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|---|---|
+| HTML5 | Page structure and layout |
+| CSS3 | Styling, animations, and responsive design |
+| JavaScript (ES6+) | Algorithm logic and DOM-based visualizations |
+| Vercel | Deployment and hosting |
+
+---
+
+## 🚀 Getting Started
+
+### Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/harshalsakhare2305/AlgoVibe.git
+   ```
+2. Navigate into the project folder:
+   ```bash
+   cd AlgoVibe
+   ```
+3. Open `index.html` in your browser — no build step required!
+   ```bash
+   # Or use Live Server in VS Code for best experience
+   ```
+
+### Deploy
+
+The project is deployed on **Vercel**. Any push to `master` auto-deploys to [algovibe.vercel.app](https://algovibe.vercel.app).
+
+---
+
+## 🏷️ Suggested GitHub Topics
+
+```
+algorithm-visualizer  sorting-algorithms  searching-algorithms  
+data-structures  javascript  html  css  bubble-sort  merge-sort  
+quick-sort  binary-search  web-app  visualization  vercel
+```
+
+---
+
+## 👤 Author
+
+**Harshal Sakhare**  
+GitHub: [@harshalsakhare2305](https://github.com/harshalsakhare2305)  
+Live App: [algovibe.vercel.app](https://algovibe.vercel.app)
+
+---
+
+> ⭐ If you find AlgoVibe helpful or cool, give it a star!
